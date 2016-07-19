@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Title (Design)"
+    xtype="panel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <defType
+            jcr:primaryType="nt:unstructured"
+            fieldLabel="Default Type"
+            name="./defaultType"
+            type="select"
+            xtype="selection">
+            <options jcr:primaryType="cq:WidgetCollection">
+                <small
+                    jcr:primaryType="nt:unstructured"
+                    text="Small"
+                    value="small"/>
+                <large
+                    jcr:primaryType="nt:unstructured"
+                    text="Large"
+                    value="large"/>
+                <xl
+                    jcr:primaryType="nt:unstructured"
+                    text="Extra Large"
+                    value="extralarge"/>
+                <link
+                    jcr:primaryType="nt:unstructured"
+                    text="Link"
+                    value="link"/>
+            </options>
+        </defType>
+    </items>
+</jcr:root>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2016-07-19T09:58:46.943-07:00"
+        cq:lastModifiedBy="admin"
+        cq:template="/apps/json-builder/templates/json-builder-template"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Another Custom JSON Schema"
+        sling:resourceType="json-builder/components/homepage">
+        <par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="foundation/components/parsys">
+            <json_editor
+                jcr:created="{Date}2016-07-18T11:29:36.335-07:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2016-07-18T12:55:58.124-07:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="json-builder/components/json-editor"
+                jsonData="\[&#xa;  {&#xa;    &quot;key&quot;: &quot;login_label&quot;,&#xa;    &quot;translations&quot;: [&#xa;      {&#xa;        &quot;language&quot;: &quot;en&quot;,&#xa;        &quot;text&quot;: &quot;Login&quot;&#xa;      },&#xa;      {&#xa;        &quot;language&quot;: &quot;fr&quot;,&#xa;        &quot;text&quot;: &quot;S'identifier&quot;&#xa;      }&#xa;    ]&#xa;  }&#xa;]"
+                schemaDefination="\{&#xa;  &quot;type&quot;: &quot;array&quot;,&#xa;  &quot;format&quot;: &quot;table&quot;,&#xa;  &quot;title&quot;: &quot;Translations&quot;,&#xa;  &quot;uniqueItems&quot;: true,&#xa;  &quot;items&quot;: {&#xa;    &quot;type&quot;: &quot;object&quot;,&#xa;    &quot;title&quot;: &quot;Message&quot;,&#xa;    &quot;properties&quot;: {&#xa;      &quot;key&quot;: {&#xa;        &quot;type&quot;: &quot;string&quot;&#xa;      },&#xa;      &quot;translations&quot;: {&#xa;        &quot;type&quot;: &quot;array&quot;,&#xa;        &quot;format&quot;: &quot;table&quot;,&#xa;        &quot;title&quot;: &quot;Translations&quot;,&#xa;        &quot;uniqueItems&quot;: true,&#xa;        &quot;items&quot;: {&#xa;          &quot;type&quot;: &quot;object&quot;,&#xa;          &quot;title&quot;: &quot;Translation&quot;,&#xa;          &quot;properties&quot;: {&#xa;            &quot;language&quot;: {&#xa;              &quot;type&quot;: &quot;string&quot;,&#xa;              &quot;enum&quot;: [&#xa;                &quot;en&quot;,&#xa;                &quot;fr&quot;&#xa;              ],&#xa;              &quot;default&quot;: &quot;en&quot;&#xa;            },&#xa;            &quot;text&quot;: {&#xa;              &quot;type&quot;: &quot;string&quot;&#xa;            }&#xa;          }&#xa;        }&#xa;      }&#xa;    }&#xa;  }&#xa;}&#xa;&#xa;&#xa;"/>
+        </par>
+    </jcr:content>
+</jcr:root>
